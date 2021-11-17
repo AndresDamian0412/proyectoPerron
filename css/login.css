@@ -4,6 +4,7 @@
     border:1px solid #d9d9d9;
     margin: 5px;
     padding: 15px;
+    background-color: #d9d9d9;
 }
 
 .login-student{
@@ -12,6 +13,7 @@
     border:1px solid #d9d9d9;
     margin: 5px;
     padding: 15px;
+    background-color: #d9d9d9;
 }
 
 .login-menu{
@@ -39,5 +41,5 @@
 }
 
 body{
-    background-image: url(../images/icon-employe.png);
+    background-image: url(../images/fondo.jpg);
 }
