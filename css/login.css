@@ -19,11 +19,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+
+    /*Esto es para centrar el div
+    NO MOVER PORQUE LUEGO NO FUNCIONA*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
 .contenedor{
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
