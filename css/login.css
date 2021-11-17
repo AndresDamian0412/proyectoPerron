@@ -1,19 +1,23 @@
-.login-employer{
-    /*el contenedor principal se separa en
-    dos divs nuevos, y este es el estilo que tienen*/
-   width: 35%;
-   box-sizing:border-box;
-   border:1px solid #d9d9d9;
-   margin: 5px;
-   padding: 15px;
-  }
-  
-  .login-student{
-    /*el contenedor principal se separa en
-    dos divs nuevos, y este es el estilo que tienen*/
-   width: 65%;
-   box-sizing:border-box;
-   border:1px solid #d9d9d9;
-   margin: 5px;
-   padding: 15px;
-  }
+.login-employe{
+    width: 50%;
+    box-sizing:border-box;
+    border:1px solid #d9d9d9;
+    margin: 5px;
+    padding: 15px;
+}
+
+.login-student{
+    width: 50%;
+    box-sizing:border-box;
+    border:1px solid #d9d9d9;
+    margin: 5px;
+    padding: 15px;
+}
+
+.login-menu{
+    box-sizing:border-box;
+    border:1px solid #d9d9d9;
+    margin: 5px;
+    padding: 15px;
+    display: flex;
+}
