@@ -4,5 +4,5 @@ function esconderForm(){
 }
 
 function cambiarForm(){
-    document.getElementById(this.id).style.visibility = "visible";
+    document.getElementById("formEmploye").style.visibility = "visible";
 }
