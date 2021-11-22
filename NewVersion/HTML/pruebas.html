@@ -1,11 +1,19 @@
+
 <html> <head> <title>Portal web - aprenderaprogramar.com</title> <meta charset="utf-8">
-    <style type="text/css"> *{font-family: arial; } table {margin:20px; background-color:yellow;}
-    td {height: 100px; text-align:center; padding:2px;}
-    </style> </head>
+    <style type="text/css">
+    *{font-family: arial; }
+    img { margin-left: 5px; margin-right:5px; }
+    div { width: 360px; height: 210px; margin: 10px; padding:5px 20px; border-style: solid; border-color: red;
+    border-width: thin; background-color: yellow; text-align: center;}
+     </style> </head>
     <body>
-    <table border="1" cellpadding="0" cellspacing="0" style="width: 450px;">
-    <tr> <td style="vertical-align:baseline;" ><p>Un texto</p></td>
-    <td style="vertical-align:top;" ><p>Un texto</p></td>
-    <td style="vertical-align:bottom;" ><p>Un texto</p></td>
-    <td style="vertical-align:middle;" ><p>Un texto</p></td>
-    </tr> </table> </body> </html>
+    <div style="float:left;">Línea de texto sin una imagen</div>
+    <div style="float:left;">
+    <p> Línea de texto<img style="vertical-align:baseline;" src="http://i.imgur.com/afC0L.jpg">con una imagen</p>
+    </div>
+    <div style="clear:both; float:left;" >
+    <p> Línea de texto<img style="vertical-align:top;" src="http://i.imgur.com/afC0L.jpg">con una imagen</p>
+    </div>
+    <div style="float:left;">
+    <p> Línea de texto<img style="vertical-align:middle;" src="http://i.imgur.com/afC0L.jpg">con una imagen</p>
+    </div> </body> </html>
