@@ -10,3 +10,20 @@ function mostrarForm() {
         console.log(cambio);
     }
 }
+
+var dato;
+var xmlhttp = new XMLHttpRequest();
+//Solicitud al servidor con Ajax
+xmlhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj =this.responseText;
+        dato=myObj;
+    }
+};
+xmlhttp.open("GET", "../PHP/login.php", true);
+xmlhttp.send();
+
+function comprobacion() {
+    console.log("aaaaa");
+    console.log(dato);
+}
