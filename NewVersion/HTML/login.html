@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/login.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,9 +24,10 @@
                                 <input id="enviarIngreso" type="submit" name="enviarLogin" value="Ingresar">
                             </fieldset>
                         </form>
+                        <a onclick="mostrarForm()">¿Aún no cuentas con un usuario? ¡Registrate aquí!</a>
                     </td>
                 </tr>
-                <tr class="register">
+                <tr class="register" id="formRegister" style="visibility: hidden;">
                     <td style="text-align: center;">
                         <form action="">
                             <fieldset>
