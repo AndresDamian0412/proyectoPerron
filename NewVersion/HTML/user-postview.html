@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+</head>
+<body>
+    <div style="height: 890px; overflow-y: scroll; width: 500px;">
+        <div class="view-post" style="text-align: center;">
+            <h2 id="name-dish">Platillo</h2>
+            <img id="img-dish" src="../IMAGES/no-image.png" alt="img-dish"
+            style="width: 200px; height: 200px;">
+            <p id="price-dish">Precio</p>
+            <p id="description-dish">Descripción del platillo</p>
+        </div>
+        <div class="view-comments">
+            <p>Comentarios</p>
+            <p id="comments"></p>
+        </div>
+        <div class="view-form">
+            <form action="">
+                <table>
+                    <tr>
+                        <td style="width: 90%;">
+                            <input type="text" name="getComment" id="getComment" style="width: 100%; height: 30px;">
+                        </td>
+                        <td style="width: 10%;">
+                            <button id="sendComment" type="button"><img src="../IMAGES/icon-send.png" alt="icon-send-comment"
+                                style="max-width: 30px; max-height: 30px;"></button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

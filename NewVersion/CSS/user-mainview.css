@@ -22,6 +22,10 @@ header {
     background-color: cornflowerblue;
 }
 
+.mid{
+    min-width: 500px;
+}
+
 #btn-ligeros,
 #btn-pesados,
 #btn-postres {
