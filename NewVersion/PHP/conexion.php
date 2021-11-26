@@ -6,7 +6,7 @@
 
         static function conectar(){
             $host = 'localhost';
-            $dbname ='pruebabd';
+            $dbname ='restaurantePerron';
             $username = 'andresdam';
             $password = '123';
             $puerto = 1433;
