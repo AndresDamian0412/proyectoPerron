@@ -34,10 +34,29 @@
                 </table>
             </form>
         </div>
-        <div>
+        <div class="view-order">
             <form action="">
-                <table>
-                    
+                <table style="width: 100%; text-align: center;">
+                    <tr>
+                        <td>
+                            <label for="ordenCantidad">Seleccione cantidad:</label>
+                            <select name="ordenCantidad" id="ordenCantidad">
+                                <option value="0" selected>0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="sendOrder" type="button">Ordenar</button>
+                        </td>
+                    </tr>
                 </table>
             </form>
         </div>
