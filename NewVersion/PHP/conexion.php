@@ -42,7 +42,7 @@
         
         /*Destructor de la clase */
         function __destruct() {
-            $this->link->close();
+            $this->link=null;
         }
     }
 ?>

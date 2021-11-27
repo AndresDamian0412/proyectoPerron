@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/login.css">
-    <script src="../JS/login.js"></script>
+    <script src="../JS/loginVistas.js"></script>
+    <script src="../JS/loginBD.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="contenedor">
-        <div class="login-view";">
+        <div class="login-view">
             <table>
                 <tr class="login">
                     <td style="text-align: center;">
@@ -22,7 +23,8 @@
                                 <input type="text" name="getUser" id="login-user"><br>
                                 <label for="getPass">Contraseña:</label><br>
                                 <input type="password" name="getPass" id="login-pass"><br><br>
-                                <input id="enviarIngreso" type="submit" name="enviarLogin" value="Ingresar" style="font-family: sans-serif;" onclick="comprobacion()">
+                                <input id="enviarIngreso" type="submit" name="enviarLogin" value="Ingresar"
+                                        style="font-family: sans-serif;" onclick="comprobacion()">
                             </fieldset>
                         </form>
                         <a href="#" onclick="mostrarForm()">¿Aún no cuentas con un usuario? ¡Registrate aquí!</a>
