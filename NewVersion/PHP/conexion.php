@@ -26,20 +26,11 @@
 
         //funcion para ejecutar una sentencia sql
         public function ejecutar($sql){
-            $this->stmt = $this->link->query($sql);
+            $this->stmt = $this->link->prepare($sql);
+            $this->stmt->execute();
             return $this->stmt;
         }
 
-        /*Método para obtener una fila de resultados de la sentencia sql*/
-        public function obtener_fila($stmt,$fila){
-            if ($fila==0){
-            $this->array=$stmt->fetch(PDO::FETCH_ASSOC);
-            }else{
-            $this->array=$stmt->fetch(PDO::FETCH_ASSOC,PDO::FETCH_ORI_NEXT,$fila);
-            }
-            return $this->array;
-        }
-        
         /*Destructor de la clase */
         function __destruct() {
             $this->link=null;

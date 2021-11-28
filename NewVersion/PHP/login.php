@@ -1,17 +1,19 @@
 <?php
-$GET;
+$_GET;
 include_once "conexion.php";
 
 $BD = new conexionBD();
 $stmt = $BD->ejecutar("Select * from usuarios");
-$fila = 0;
-echo $fila;
-//funciones recuperadas del documento de practica
-global $arreglo;
+$array;
+$i=0;
 
-for ($fila=0; $fila < $stmt->rowCount();$fila++) {
-  $registro=$BD->obtener_fila($stmt,$fila);
-  $arreglo[$fila] = $registro;
+while($resultado= $stmt->fetch(PDO::FETCH_ASSOC)){
+  $array[$i] = $resultado;
+  print_r($array[$i]);
+  print "<br><br>";
+  $i++;
 }
-echo json_encode($arreglo);
+$stmt->closeCursor();
+$json_datos = json_encode($array);
+print($json_datos);
 ?>
