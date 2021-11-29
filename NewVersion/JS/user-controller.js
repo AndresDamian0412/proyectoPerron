@@ -7,7 +7,7 @@ xmlhttp.onreadystatechange = function() {
         console.log(myObj);
     }
 }
-xmlhttp.open("GET", "../HTML/user-postview.html", true);
+xmlhttp.open("GET", "../HTML/user-orderlist.html", true);
 xmlhttp.send();
 
 function formu(){
