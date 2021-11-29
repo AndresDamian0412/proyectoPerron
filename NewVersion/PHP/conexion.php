@@ -18,9 +18,7 @@
             try {
                 $this->link = new PDO("sqlsrv:Server=$this->host,$this->puerto;Database=$this->dbname",
                     $this->username,$this->password);
-                echo ("Se conectó correctamente la base de datos");
             } catch (PDOException $exp) {
-                echo ("No se logro la conexion a la base de datos: $this->dbname, error:$exp");
             }
         }
 
