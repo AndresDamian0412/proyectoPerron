@@ -1,3 +1,7 @@
+function comprobacion() {
+    console.log("hola");
+}
+
 var xmlhttp = new XMLHttpRequest();
 //Solicitud al servidor con Ajax
 var dato;
@@ -10,7 +14,3 @@ xmlhttp.onreadystatechange = function () {
 };
 xmlhttp.open("GET", "../PHP/login.php", true);
 xmlhttp.send();
-
-function comprobacion() {
-    console.log("hola");
-}
