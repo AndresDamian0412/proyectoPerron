@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vista principal Admin</title>
     <link rel="stylesheet" href="../CSS/admin-mainview.css">
+    <script src="../JS/admin-controller.js"></script>
 </head>
 
 <body>
@@ -34,10 +35,10 @@
                         <table style="width: 100%;">
                             <tr>
                                 <td style="width: 50%;">
-                                    <button id="btn-pedidos" type="button" value="Pedidos">Pedidos</button>
+                                    <button onclick="cambioVista('orderlist')" id="btn-pedidos" type="button" value="Pedidos">Pedidos</button>
                                 </td>
                                 <td style="width: 50%;">
-                                    <button id="btn-publicacion" type="button"
+                                    <button onclick="cambioVista('postcreate')" id="btn-publicacion" type="button"
                                         value="Publicacion">Publicaciones</button>
                                 </td>
                             </tr>
@@ -45,9 +46,8 @@
                     </form>
                 </div>
                 <!--Aqui se realiza el cambio de posts-->
-                <div style="height: 890px; overflow-y: scroll;">
+                <div id="cambiar" style="height: 890px; overflow-y: scroll;">
                     <!--Pruebas de vista de publicaciones-->
-                    
                     
                 </div>
             </div>
