@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear publicación</title>
+</head>
+<body>
+    <div class="crear" style="border-bottom: 3px solid grey;">
+        <form action="">
+            <fieldset>
+                <table style="width: 100%;">
+                    <tr>
+                        <td>
+                            <label for="getNombre">Nombre:</label><br>
+                            <input type="text" name="getNombre" id="getNombre"><br>
+                            <label for="getImg">Imagen:</label><br>
+                            <input type="text" name="getImg" id="getImg"><br>
+                            <label for="getPrecio">Precio:</label><br>
+                            <input type="number" name="getPrecio" id="getPrecio"><br><br>
+                            <label for="getTipo">Tipo:</label>
+                            <select name="getTipo" id="getTipo">
+                                <option value="Ligero" selected>Ligero</option>
+                                <option value="Pesado">Pesado</option>
+                                <option value="Postre">Postre</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="getDesc">Descripción:</label><br>
+                            <textarea name="getDesc" id="getDesc" cols="30" rows="10">Maximo 300 caracteres</textarea>
+                        </td>
+                        <td>
+                            <input type="submit" name="sendPost" id="sendPost">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+    <div class="ver">
+
+    </div>
+</body>
+</html>
