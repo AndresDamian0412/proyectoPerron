@@ -10,10 +10,18 @@ function controlUsers(user,pwd){
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var myObj = JSON.parse(this.responseText);
-            console.log(myObj[0].NomUsuario);
+            console.log(myObj);
+            
+            //si da 0 rows se niega acceso
+            
+            //si lo encontro se abre un if
+
+            //si tipo user es admin abre ventana admin
+
+            //si tipo user es user se abre ventana usuario
         }
     };
 
-    xmlhttp.open("GET", "../PHP/login.php", true);
+    xmlhttp.open("GET", "../PHP/login.php?nombre="+user+"&clave="+pwd, true);
     xmlhttp.send();
 }
