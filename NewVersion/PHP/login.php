@@ -2,8 +2,10 @@
 include_once "conexion.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {  
-  $user = $_GET["nombre"];
-  $pwd = $_GET["clave"];
+  //$user = $_GET["nombre"];
+  //$pwd = $_GET["clave"];
+  $user ="Andres";
+  $pwd ="123";
 
   $BD = new conexionBD();
   $sql = "SELECT * FROM usuarios WHERE NomUsuario= '".$user."' and Contra = '".$pwd."'";

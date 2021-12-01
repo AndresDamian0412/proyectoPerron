@@ -10,9 +10,20 @@ function controlUsers(user,pwd){
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var myObj = JSON.parse(this.responseText);
-            console.log(myObj);
+            console.log(myObj[0].TipoUser);
+            if(myObj == null){
+                //Se niega el acceso
+                window.alert("Acceso denegado");
+            }else{
+                if(myObj[0].TipoUser = "User"){
+                    //Se abre pestaña usuario
+                    window.location.href = '../HTML/user-mainview.html';
+                }else if(myObj[0].TipoUser = "Admin"){
+                    //Se abre pestaña administrador
+                    window.location.href = '../HTML/admin-mainview.html';
+                }
+            }
             
-            //si da 0 rows se niega acceso
             
             //si lo encontro se abre un if
 
