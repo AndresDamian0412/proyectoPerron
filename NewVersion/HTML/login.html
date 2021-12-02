@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/login.css">
     <script src="../JS/loginVistas.js"></script>
-    <script src="../JS/loginBD.js"></script>
     <title>Login</title>
 </head>
 <body>
@@ -16,7 +15,7 @@
                 <tr class="login">
                     <td style="text-align: center;">
                         <img src="../IMAGES/serv-esc-logo.png" alt="temporal-icon" id="icon-login">
-                        <form action="" method="post">
+                        <form action="../PHP/login.php" method="post">
                             <fieldset>
                                 <legend>Ingresar</legend>
                                 <label for="getUser">Usuario:</label><br>
@@ -24,7 +23,7 @@
                                 <label for="getPass">Contraseña:</label><br>
                                 <input type="password" name="getPass" id="login-pass" required><br><br>
                                 <input id="enviarIngreso" type="submit" name="enviarLogin" value="Ingresar"
-                                        style="font-family: sans-serif;" onclick="comprobacion()">
+                                        style="font-family: sans-serif;">
                             </fieldset>
                         </form>
                         <a href="#" onclick="mostrarForm()">¿Aún no cuentas con un usuario? ¡Registrate aquí!</a>
