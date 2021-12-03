@@ -48,13 +48,13 @@
                         <table style="width: 100%;">
                             <tr>
                                 <td>
-                                    <button id="btn-ligeros" type="button" value="Ligeros">Ligeros</button>
+                                    <button id="btn-ligeros" type="button" value="Ligeros" onclick="vaciado('Ligeros')">Ligeros</button>
                                 </td>
                                 <td>
-                                    <button id="btn-pesados" type="button" value="Pesados">Pesados</button>
+                                    <button id="btn-pesados" type="button" value="Pesados" onclick="vaciado('Pesados')">Pesados</button>
                                 </td>
                                 <td>
-                                    <button id="btn-postres" type="button" value="Postres">Postres</button>
+                                    <button id="btn-postres" type="button" value="Postres" onclick="vaciado('Postres')">Postres</button>
                                 </td>
                                 <td style="width: 50px;">
                                     <button id="btn-precio" type="button" value="alto"><img
@@ -72,7 +72,7 @@
                         <table style="width: 100%; border-bottom: 1px solid rgb(192, 192, 192);" onclick="cambioVista('postview')">
                             <tr>
                                 <td>
-                                    <p>Platillo nombre</p>
+                                    <p id="prueba">Platillo nombre</p>
                                     <img src="../IMAGES/no-image.png" alt="image-dish"
                                         style="width: 200px; height: 130px;">
                                 </td>
@@ -92,6 +92,8 @@
         </div>
         <div class="der" style="width: 20%;"></div>
     </div>
+    <script>
+        vaciado("");
+    </script>
 </body>
-
 </html>

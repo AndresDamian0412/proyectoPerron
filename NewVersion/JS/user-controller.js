@@ -1,6 +1,5 @@
-var myObj;
-
 function cambioVista(direccion) {
+    var myObj;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -12,15 +11,15 @@ function cambioVista(direccion) {
     xmlhttp.send();
 }
 
-var myObj2;
-
-function vaciado() {
+function vaciado(filtro) {
+    var myObj;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function(){
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            //Codigo para mostrar
+            myObj = this.responseText;
+            console.log(myObj);
         }
     }
-    xmlhttp.open();
-    xmlhttp.send();    
+    xmlhttp.open("GET", "../PHP/posts.php?filtro="+filtro,true);
+    xmlhttp.send();
 }
