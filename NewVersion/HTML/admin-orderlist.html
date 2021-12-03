@@ -5,37 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ordenes</title>
+    <script src="../JS/admin-controller.js"></script>
 </head>
 <body>
-    <div class="pendientes" style="border-bottom: 2px solid grey;">
-        <table style="border-collapse: collapse; width: 100%; border: 1px solid rgb(141, 141, 141);">
-            <tr style="background-color: rgb(231, 231, 231); border-bottom: 1px solid grey; ">
-                <td style="width: 30%; text-align: center;">
-                    <p>Nombre de platillo</p>
-                    <img style="width: 100px; height: 80px;" src="../IMAGES/no-image.png" alt="img-dish">
-                </td>
-                <td style="width: 60%;">
-                    <p style="color: grey;">FECHA DEL PEDIDO</p>
-                    <p id="fecha">DD/MM/AAAA</p>
-                    <p style="color: grey;" id="id-pedido">#ID_PEDIDO</p>
-
-                    <p id="status">Estado del pedido</p>
-                    <form action="">
-                        <select name="ordenCantidad" id="ordenCantidad">
-                            <option value="espera" selected>En espera</option>
-                            <option value="confirmado">Confirmado</option>
-                            <option value="entregado">Entregado</option>
-                        </select>
-                    </form>
-                </td>
-                <td style="width: 10%;">
-                    <p style="color: grey;">TOTAL</p>
-                    <p id="total">$00.00</p>
-                </td>
-            </tr>
-        </table>
+    <button onclick="getOrder()">Refrescar</button>
+    <div id="pendientes" style="border-bottom: 2px solid grey;">
+        
     </div>
-    <div class="terminados">
+
+    <div id="terminados">
 
     </div>
 </body>
