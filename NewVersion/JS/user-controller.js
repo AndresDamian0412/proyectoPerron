@@ -4,8 +4,7 @@ function cambioVista(idPlatillo) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            myObj = JSON.parse(this.responseText);
-            
+            document.getElementById("mid-contenido").innerHTML = this.responseText;
         }
     }
     xmlhttp.open("GET", "../PHP/specific_post.php?idPlatillo="+idPlatillo, true);
