@@ -6,7 +6,7 @@
         $BD = new conexionBD();
         $array;
         $i = 0;
-        echo $filtro;
+
         if(empty($filtro)){
             $sql = "SELECT * FROM platillos";
             $stmt = $BD->ejecutar($sql);
