@@ -33,5 +33,7 @@
                 </script>';
             }
         }
+        $stmt1->closeCursor();
+        $stmt2->closeCursor();
     }
 ?>
