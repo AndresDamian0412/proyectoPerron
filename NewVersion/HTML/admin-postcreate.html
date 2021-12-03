@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Crear publicación</title>
     <script src="../JS/admin-controller.js"></script>
 </head>
+
 <body>
     <div class="crear" style="border-bottom: 3px solid grey;">
         <form action="" method="">
@@ -15,11 +17,11 @@
                     <tr>
                         <td>
                             <label for="getNombre">Nombre:</label><br>
-                            <input type="text" name="getNombre" id="getNombre"><br>
+                            <input type="text" name="getNombre" id="getNombre" required><br>
                             <label for="getImg">Imagen:</label><br>
-                            <input type="text" name="getImg" id="getImg"><br>
+                            <input type="text" name="getImg" id="getImg" required><br>
                             <label for="getPrecio">Precio:</label><br>
-                            <input type="number" name="getPrecio" id="getPrecio"><br><br>
+                            <input type="number" name="getPrecio" id="getPrecio" required><br><br>
                             <label for="getTipo">Tipo:</label>
                             <select name="getTipo" id="getTipo">
                                 <option value="Ligeros" selected>Ligero</option>
@@ -29,7 +31,7 @@
                         </td>
                         <td>
                             <label for="getDesc">Descripción:</label><br>
-                            <textarea name="getDesc" id="getDesc" cols="30" rows="10">Maximo 300 caracteres</textarea>
+                            <textarea name="getDesc" id="getDesc" cols="30" rows="10" required>Maximo 300 caracteres</textarea>
                         </td>
                         <td>
                             <button type="button" onclick="getPostInfo()">Publicar</button>
@@ -39,8 +41,9 @@
             </fieldset>
         </form>
     </div>
+    <button onclick="setPostInfo()">Refrescar</button>
     <div id="ver">
-
     </div>
 </body>
+
 </html>
